@@ -20,6 +20,6 @@ It _should_ prompt before acutally moving things to the trash.
 
 This assumes you haven't customized the location of `DerivedData`.
 
-## Cusomizing
+## Customizing
 
 This is just a silly Automator.app thing so have at it.
