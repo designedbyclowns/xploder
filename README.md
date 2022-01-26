@@ -2,7 +2,7 @@
 
 A simple Mac OS service menu item to quit xcode and (optionally) move the contents of `~/Library/Developer/Xcode/DerivedData/` to the trash.
 
-Espeically helpful to use before switching branches in git, so Xcode _might_ not puke all over itself if the project file has changes.
+Helpful to use before switching branches in git, so Xcode _might_ not puke all over itself if the project file has changes.
 
 ## Installation
 
