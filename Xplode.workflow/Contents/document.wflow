@@ -118,14 +118,116 @@
 						<string>1</string>
 					</dict>
 				</dict>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>309.000000:224.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Quit Application.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}		tell application "Finder"				set cachePath to (path to home folder as string) &amp; "Library:Caches:org.swift.swiftpm"				if exists cachePath then			set spmCache to cachePath as alias			delete cachePath		end if			end tell		return inputend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>7447BEAA-33F3-4A71-954A-CB20414B2587</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D4E4A547-01FE-4422-8E53-596ED01287A3</string>
+				<key>UUID</key>
+				<string>B4885026-277B-4514-91D5-64F774775CC4</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
 				<key>conversionLabel</key>
 				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:280.000000</string>
+				<string>309.000000:525.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Quit Application.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<integer>1</integer>
@@ -292,12 +394,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:532.000000</string>
+				<string>309.000000:721.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -396,12 +496,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:957.000000</string>
+				<string>309.000000:966.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -411,17 +509,24 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>9D326F59-830E-4136-8CD6-416EDFCB5821</key>
+		<key>1279FBCC-8C67-4D27-9E79-2D421CA01730</key>
 		<dict>
 			<key>from</key>
 			<string>0F4E76B7-5E34-45F2-B9C3-777692CF5C9F - 0F4E76B7-5E34-45F2-B9C3-777692CF5C9F</string>
 			<key>to</key>
 			<string>4447D011-E98E-49DC-AF72-8984A96595BA - 4447D011-E98E-49DC-AF72-8984A96595BA</string>
 		</dict>
-		<key>D4C9530A-94C4-441E-B493-87CD2407CBEB</key>
+		<key>7EBE49B6-6F35-4A11-A235-385B55F746BB</key>
 		<dict>
 			<key>from</key>
 			<string>102718F5-D781-4905-9D11-FF542C0C0D54 - 102718F5-D781-4905-9D11-FF542C0C0D54</string>
+			<key>to</key>
+			<string>B4885026-277B-4514-91D5-64F774775CC4 - B4885026-277B-4514-91D5-64F774775CC4</string>
+		</dict>
+		<key>BF11DC96-AE47-4182-B776-0B4C98F218D6</key>
+		<dict>
+			<key>from</key>
+			<string>B4885026-277B-4514-91D5-64F774775CC4 - B4885026-277B-4514-91D5-64F774775CC4</string>
 			<key>to</key>
 			<string>0F4E76B7-5E34-45F2-B9C3-777692CF5C9F - 0F4E76B7-5E34-45F2-B9C3-777692CF5C9F</string>
 		</dict>
